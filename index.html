@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PyleaMUN Registration</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Page background matches hero overlay color */
+    body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #f8f8f0; }
+    .navbar-custom { background-color: #f8f8f0; }
 
+    .hero {
+      background-image: url('pyleaMUNfinallogo.png');
+      background-repeat: no-repeat;
+      background-size: auto 80%;
+      background-position: center center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      margin-top: 56px;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(248, 248, 240, 0.4); /* 60% opacity overlay (60% fade) */
+    }
+    .hero-content {
+      position: relative; 
+      z-index: 1; 
+      width: 100%;
+      color: #001f3f;
+      padding: 2rem;
+    }
+    .btn-teal-gold {
+      background-color: #008080; /* Teal */
+      color: white;
+      font-weight: bold;
+      border: 3px solid #FFD700; /* Gold */
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    .btn-teal-gold:hover {
+      background-color: #006666; /* Darker teal */
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .button-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .button-center {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="pyleaMUNfinallogo1.png" alt="PyleaMUN Logo" class="me-2" style="height:40px;">
+        PyleaMUN
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Buttons -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="container">
+        <!-- First row with two buttons -->
+        <div class="button-row">
+          <a href="https://forms.gle/kLWtiiySCcsNdJ1W6" class="btn btn-teal-gold">School Registration 2026</a>
+          <a href="https://forms.gle/ZPZdkUDisqmouTNX7" class="btn btn-teal-gold">Independent Delegation Application 2026</a>
+        </div>
+        
+        <!-- Second row with one centered button -->
+        <div class="button-center">
+          <a href="https://forms.gle/GQFrG4jnE5An4CiD6" class="btn btn-teal-gold">Student Officer Application 2026</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
