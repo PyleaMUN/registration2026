@@ -20,11 +20,12 @@
       background-position: center center;
       height: 100vh;
       display: flex;
-      align-items: center;
+      align-items: flex-end; /* Changed to push content down */
       justify-content: center;
       position: relative;
       text-align: center;
       margin-top: 56px;
+      padding-bottom: 100px; /* Added padding to push hero down */
     }
     .hero::before {
       content: "";
@@ -35,12 +36,12 @@
       bottom: 0;
       background-color: rgba(248, 248, 240, 0.4); /* 60% opacity overlay (60% fade) */
     }
-    .hero-content {
-      position: relative; 
-      z-index: 1; 
-      width: 100%;
-      color: #001f3f;
-      padding: 2rem;
+    .button-container {
+      position: absolute;
+      top: 30%; /* Positioned higher up */
+      left: 0;
+      right: 0;
+      z-index: 2;
     }
     .btn-teal-gold {
       background-color: #008080; /* Teal */
@@ -80,21 +81,31 @@
     </div>
   </nav>
 
-  <!-- Hero Section with Buttons -->
+  <!-- Button Container (positioned above hero content) -->
+  <div class="button-container">
+    <div class="container">
+      <!-- First row with two buttons -->
+      <div class="button-row">
+        <a href="https://forms.gle/kLWtiiySCcsNdJ1W6" class="btn btn-teal-gold">School Registration 2026</a>
+        <a href="https://forms.gle/ZPZdkUDisqmouTNX7" class="btn btn-teal-gold">Independent Delegation Application 2026</a>
+      </div>
+      
+      <!-- Second row with one centered button -->
+      <div class="button-center">
+        <a href="https://forms.gle/GQFrG4jnE5An4CiD6" class="btn btn-teal-gold">Student Officer Application 2026</a>
+      </div>
+
+      <!-- Third row with Further Info button -->
+      <div class="button-center mt-4">
+        <a href="https://pyleamun.github.io/pyleamun2026/" class="btn btn-teal-gold">Further Info</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section (content pushed down) -->
   <header class="hero">
     <div class="hero-content">
-      <div class="container">
-        <!-- First row with two buttons -->
-        <div class="button-row">
-          <a href="https://forms.gle/kLWtiiySCcsNdJ1W6" class="btn btn-teal-gold">School Registration 2026</a>
-          <a href="https://forms.gle/ZPZdkUDisqmouTNX7" class="btn btn-teal-gold">Independent Delegation Application 2026</a>
-        </div>
-        
-        <!-- Second row with one centered button -->
-        <div class="button-center">
-          <a href="https://forms.gle/GQFrG4jnE5An4CiD6" class="btn btn-teal-gold">Student Officer Application 2026</a>
-        </div>
-      </div>
+      <!-- Hero content is now at the bottom of the hero section -->
     </div>
   </header>
 
